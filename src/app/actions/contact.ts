@@ -28,7 +28,7 @@ export async function sendContact(
   try {
     await resend.emails.send({
       from: "site@resend.monkay.io",
-      to: "contato@resend.monkay.io",
+      to: "contato@monkay.io",
       subject: `Nova mensagem de ${name}${company ? ` — ${company}` : ""}`,
       html: `
         <p><strong>Nome:</strong> ${name}</p>
